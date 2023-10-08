@@ -7,9 +7,9 @@ class Solution {
             int value = Math.min(height[i], height[j]) * (j - i);
             maxValue = Math.max(maxValue, value);
             if (height[i] < height[j]) {
-                ++i;
+                i++;
             } else {
-                --j;
+                j--;
             }
         }
         return maxValue;
